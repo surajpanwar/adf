@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "demo-adf-surajpanwar"
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"LS_SQL_SERVER_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "demo-surajpanwar.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "demo_sql_db"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "surajpanwar"
+		},
+		"LS_ADLS_properties_typeProperties_url": {
+			"value": "https://demosurajpanwar.dfs.core.windows.net/"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_server": {
+			"value": "demo-surajpanwar.database.windows.net"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_database": {
+			"value": "demo_sql_db"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_userName": {
+			"value": "surajpanwar"
+		},
+		"TGR_Event_Simple_properties_PL_File_Event_parameters_file_name": {
+			"value": "@triggerBody().fileName"
+		},
+		"TGR_Event_Simple_properties_typeProperties_scope": {
+			"value": "/subscriptions/db20f6ba-0c77-4fcc-89a2-7f9884646d1b/resourceGroups/test/providers/Microsoft.Storage/storageAccounts/demosurajpanwar"
+		},
+		"TGR_File_Event_properties_PL_File_Event_parameters_file_name": {
+			"value": "@triggerBody().fileName"
+		},
+		"TGR_File_Event_properties_typeProperties_scope": {
+			"value": "/subscriptions/db20f6ba-0c77-4fcc-89a2-7f9884646d1b/resourceGroups/test/providers/Microsoft.Storage/storageAccounts/demosurajpanwar"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
