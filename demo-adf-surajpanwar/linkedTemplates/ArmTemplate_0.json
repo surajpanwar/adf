@@ -43,6 +43,10 @@
 			"type": "string",
 			"defaultValue": "surajpanwar"
 		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://demo-surajpanwar.vault.azure.net/"
+		},
 		"TGR_Event_Simple_properties_PL_File_Event_parameters_file_name": {
 			"type": "string",
 			"defaultValue": "@triggerBody().fileName"
@@ -378,6 +382,19 @@
 						"type": "SecureString",
 						"value": "[parameters('LS_SQL_SERVER_password')]"
 					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureKeyVault1')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureKeyVault",
+				"typeProperties": {
+					"baseUrl": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
 				}
 			},
 			"dependsOn": []
@@ -1601,7 +1618,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
+				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {

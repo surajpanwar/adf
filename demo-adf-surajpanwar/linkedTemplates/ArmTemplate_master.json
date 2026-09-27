@@ -59,6 +59,10 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/db20f6ba-0c77-4fcc-89a2-7f9884646d1b/resourceGroups/test/providers/Microsoft.Storage/storageAccounts/demosurajpanwar"
 		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://demo-surajpanwar.vault.azure.net/"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -112,6 +116,9 @@
 					},
 					"LS_SQL_SERVER_properties_typeProperties_userName": {
 						"value": "[parameters('LS_SQL_SERVER_properties_typeProperties_userName')]"
+					},
+					"AzureKeyVault1_properties_typeProperties_baseUrl": {
+						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
 					},
 					"TGR_Event_Simple_properties_PL_File_Event_parameters_file_name": {
 						"value": "[parameters('TGR_Event_Simple_properties_PL_File_Event_parameters_file_name')]"

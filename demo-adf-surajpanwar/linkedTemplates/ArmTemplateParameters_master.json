@@ -44,6 +44,9 @@
 		"TGR_File_Event_properties_typeProperties_scope": {
 			"value": "/subscriptions/db20f6ba-0c77-4fcc-89a2-7f9884646d1b/resourceGroups/test/providers/Microsoft.Storage/storageAccounts/demosurajpanwar"
 		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://demo-surajpanwar.vault.azure.net/"
+		},
 		"containerUri": {
 			"value": ""
 		},
