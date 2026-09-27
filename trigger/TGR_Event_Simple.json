@@ -1,0 +1,28 @@
+{
+	"name": "TGR_Event_Simple",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_File_Event",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"file_name": "@triggerBody().fileName"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/source/blobs/source_folder/",
+			"blobPathEndsWith": ".txt",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/db20f6ba-0c77-4fcc-89a2-7f9884646d1b/resourceGroups/test/providers/Microsoft.Storage/storageAccounts/demosurajpanwar",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

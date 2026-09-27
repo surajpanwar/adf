@@ -1,0 +1,21 @@
+{
+	"name": "demo-adf-surajpanwar",
+	"properties": {
+		"globalParameters": {
+			"email_recepient": {
+				"type": "string",
+				"value": "psuraj851@gmail.com"
+			}
+		},
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0f310d9f-e4a2-48e4-a459-781896baa284",
+		"tenantId": "24e699ce-fdc9-4776-8988-c56f56965edd"
+	}
+}
